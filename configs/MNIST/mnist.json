@@ -1,0 +1,31 @@
+{
+    "clients": {
+        "total": 100,
+        "per_round": 10
+    },
+    "data": {
+        "loading": "static",
+        "partition": {
+            "size": 600
+        },
+        "IID": false,
+        "bias": {
+                "primary": 0.5,
+                "secondary": false
+            }
+    },
+    "federated_learning": {
+        "rounds": 5,
+        "episodes": 100,
+        "target_accuracy": 0.99,
+        "task": "train",
+        "epochs": 5,
+        "batch_size": 10
+    },
+    "model": "MNIST",
+    "paths": {
+        "data": "./data",
+        "model": "./models"
+    },
+    "server": "ppotrain"
+}
